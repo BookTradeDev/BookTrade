@@ -18,3 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/booksfortrade', 'BooksForTradeController@index');
+Route::post("store", 'BooksForTradeController@store');
+
+//Route::get('/booksfortrade', function (){
+//    return view('booksfortrade');
+//});
+
+Route::get('/selectbook', 'SelectBookController@index');
+Route::get('selectbook-ajax', 'SelectBookController@dataAjax');
+
+
+

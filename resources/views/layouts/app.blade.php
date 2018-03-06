@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+
 </head>
 <body>
     <div id="app">
@@ -28,9 +31,9 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
+                    {{--<a class="navbar-brand" href="{{ url('/') }}">--}}
+                        {{--{{ config('app.name', 'Laravel') }}--}}
+                    {{--</a>--}}
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">

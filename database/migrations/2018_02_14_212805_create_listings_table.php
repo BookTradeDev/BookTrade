@@ -19,7 +19,7 @@ class CreateListingsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('isbn');
             $table->string('title');
-            $table->string('condition');
+            $table->string('book_condition');
             $table->string('location');
             $table->timestamps();
         });
