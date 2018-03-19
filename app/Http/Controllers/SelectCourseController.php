@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Course;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
-class SelectBookController extends Controller
+use Auth;
+class SelectCourseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,45 +15,18 @@ class SelectBookController extends Controller
      */
     public function index()
     {
-            return view('selectbook');
+            return view('selectcourse');
     }
 
-//    public function bookneeded(Request $request){
-//
-//        //find course from form submission
-//    $selectCourse = Course::find($selection);
-//
-//    //get book info
-//    $courseBook = $selectCourse->book;
-//
-//    return $courseBook;
-//
-//    //store book selection
-//// $user->booksWanted->attach($courseBook);
-//
-////        find course from form submission
-////$selectedCourse = Course::find($selection);
-////
-////// get book information
-////$courseBook = $selectedCourse->book;
-////
-////// store user's book selection
-////$user->booksWanted->attach($courseBook);
-//
-//    }
-
-    public function dataAjax(Request $request)
+    public function look(Request $request)
     {
-        $data = [];
+        $pickcourse = new Course;
+        $pickcourse ->  Input::get("select_course");
+        return response($pickcourse);
 
-        if($request->has('q')){
-            $search = $request->q;
-            $data = DB::table("courses")
-                ->select("id","courseNumber")
-                ->where("courseNumber","LIKE","%$search%")
-                ->get();
-        }
-        return response()->json($data);
+//        $selectCourse = select_course::find($selection);
+//        $courseBook = $selectCourse->book;
+//        return response($courseBook);
     }
     /**
      * Show the form for creating a new resource.
@@ -61,7 +35,7 @@ class SelectBookController extends Controller
      */
     public function create()
     {
-        //
+       //
     }
 
     /**

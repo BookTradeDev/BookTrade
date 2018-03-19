@@ -31,9 +31,9 @@
                     </button>
 
                     <!-- Branding Image -->
-                    {{--<a class="navbar-brand" href="{{ url('/') }}">--}}
-                        {{--{{ config('app.name', 'Laravel') }}--}}
-                    {{--</a>--}}
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        {{ config('app.name', 'BookTrade') }}
+                    </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -45,6 +45,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
+
                         @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
@@ -55,6 +56,8 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
+                                    <li><a class="nav-link" href="/searchbooks">Find Books</a> </li>
+                                    <li><a class="nav-link" href="/booksfortrade">Trade Books</a> </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

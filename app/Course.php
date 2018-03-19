@@ -4,8 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Class extends Model
+class Course extends Model
 {
     //
+    public function book()
+    {
+        return $this->hasOne('App\Book');
+    }
 
 }

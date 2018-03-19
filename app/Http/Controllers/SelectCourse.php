@@ -17,30 +17,6 @@ class SelectBookController extends Controller
             return view('selectbook');
     }
 
-//    public function bookneeded(Request $request){
-//
-//        //find course from form submission
-//    $selectCourse = Course::find($selection);
-//
-//    //get book info
-//    $courseBook = $selectCourse->book;
-//
-//    return $courseBook;
-//
-//    //store book selection
-//// $user->booksWanted->attach($courseBook);
-//
-////        find course from form submission
-////$selectedCourse = Course::find($selection);
-////
-////// get book information
-////$courseBook = $selectedCourse->book;
-////
-////// store user's book selection
-////$user->booksWanted->attach($courseBook);
-//
-//    }
-
     public function dataAjax(Request $request)
     {
         $data = [];
