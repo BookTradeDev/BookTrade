@@ -56,8 +56,9 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="/searchbooks">Find Books</a> </li>
+                                    <li><a class="nav-link" href="/searchbooks">Search Listings</a> </li>
                                     <li><a class="nav-link" href="/booksfortrade">Trade Books</a> </li>
+                                    <li><a class="nav-link" href="/bookswanted">Choose Books</a> </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

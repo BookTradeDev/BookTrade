@@ -6,14 +6,43 @@
         <div class="row">
             <div class="col-md-4">
                 <h1>Books Wanted</h1>
+                <p>Enter up to 5 books at a time. Just click 'Add Books' and we'll let you know when we've found one for you.</p>
                 <form action='wanted' method='POST'>
                     <div class='form-group'>
                         <table>
                             {{--<input type='text' name='isbn' id='isbn' placeholder="ISBN">--}}
-                            <input type="text" name="isbn[]" placeholder="enter isbn...">
-                            <input type="text" name="isbn[]" placeholder="enter isbn...">
-                            <input type="text" name="isbn[]" placeholder="enter isbn...">
+                            <tr>
+                                <td style="padding-bottom: 3px">
+                                   <input type="text" name="isbn[]" placeholder="enter isbn...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 3px">
+                                   <input type="text" name="isbn[]" placeholder="enter isbn...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 3px">
+                                   <input type="text" name="isbn[]" placeholder="enter isbn...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 3px">
+                                    <input type="text" name="isbn[]" placeholder="enter isbn...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 3px">
+                                    <input type="text" name="isbn[]" placeholder="enter isbn...">
+                                </td>
+                            </tr>
+
+
+
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+
+
 
 
 

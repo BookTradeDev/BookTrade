@@ -8,7 +8,7 @@
             {{ csrf_field() }}
             <div class="input-group">
                 <input type="text" class="form-control" name="q"
-                       placeholder="Search Listings"> <span class="input-group-btn">
+                       placeholder="Search ISBN or keyword..."> <span class="input-group-btn">
 					<button type="submit" class="btn btn-default">
 						<span class="glyphicon glyphicon-search"></span>
 					</button>
@@ -40,8 +40,8 @@
     </div>
     <div class="container">
         @if(isset($details))
-            <p> The Search results for your query <b> {{ $query }} </b> are :</p>
-            <h2>Sample Listings</h2>
+            <p> Results for <b> {{ $query }} </b> :</p>
+            <h2>Book Listings</h2>
             <table class="table table-striped">
                 <thead>
                 <tr>

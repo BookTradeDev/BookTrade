@@ -11,24 +11,26 @@
 
                     <div class='form-group'>
                         <table>
-                            <tr>
-                                <td>
+                            <tr style="padding: 5px">
+                                <td style="padding: 5px">
                                     <input type='text' name='isbn' id='isbn' placeholder="ISBN">
                                 </td>
-                                <td>
+                                <td style="padding: 5px">
                                     <input type="text" name="title" id="title" placeholder="Title">
                                 </td>
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                {{--<td>--}}
-                                    {{--<input type="text" name="author" id="author" placeholder="Author">--}}
-                                {{--</td>--}}
-                                <td>
+                                <td style="padding: 5px">
                                     <select name="book_condition" id="book_condition" placeholder="Condition">
                                         <option value="good">Good</option>
                                         <option value="fair">Fair</option>
                                         <option value="poor">Poor</option>
+                                    </select>
                                 </td>
                             </tr>
+
+                        {{--<td>--}}
+                        {{--<input type="text" name="author" id="author" placeholder="Author">--}}
+                        {{--</td>--}}
 
 
                             <!--

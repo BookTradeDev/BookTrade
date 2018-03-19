@@ -83,8 +83,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="/searchbooks">Find a Book</a>
+                    <a href="/searchbooks">Search Listings</a>
                     <a href="/booksfortrade">Trade a Book</a>
+                    <a href="/bookswanted">Choose Books</a>
 
 
                 </div>

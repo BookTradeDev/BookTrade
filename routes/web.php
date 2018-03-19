@@ -28,6 +28,9 @@ Route::post("store", 'BooksForTradeController@store');
 Route::get('bookswanted', 'BooksWantedController@index');
 Route::post('wanted', 'BooksWantedController@wanted');
 
+Route::get('tradebooks', 'TradeBooksController@index');
+Route::post('trade', 'TradeBooksController@trade');
+
 //Route::get('/booksfortrade', function (){
 //    return view('booksfortrade');
 //});
